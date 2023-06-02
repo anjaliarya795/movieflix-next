@@ -1,12 +1,11 @@
 import React from 'react';
-import Navbar from './comp/Navbar';
-import Herosection from './comp/Herosection';
+import Herosection from './components/Herosection';
+import image from "../public/hero.svg";
 
 const Page = () => {
   return (
     <div>
-      <Navbar/>
-      <Herosection/>
+      <Herosection imgurl={image} title={"WATCH UNLIMITED MOVIES "} />
     </div>
   );
 }
