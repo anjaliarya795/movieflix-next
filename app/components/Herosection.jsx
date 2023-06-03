@@ -29,7 +29,7 @@ const Herosection = ({title,imgurl}) => {
                     </div>
 
                     <div className='md:basis-1/2 basis-2/3 md:block hidden '>
-                        <Image src={imgurl} width={500} height={500} className='mx-auto'/>
+                        <Image src={imgurl} width={500} height={500} alt="image" className='mx-auto'/>
                     </div>
 
                 </div>

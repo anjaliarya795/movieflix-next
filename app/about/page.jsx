@@ -1,6 +1,6 @@
 import React from 'react';
-import Herosection from '../Herosection';
-import image from "../../../public/about.svg"
+import Herosection from '../components/Herosection';
+import image from "../../public/about.svg"
 
 const About = () => {
     return (

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Links from './Links';
-import About from '../about/page';
+import About from '../../about/page';
 
 const Navbar = () => {
   return (
@@ -11,9 +11,9 @@ const Navbar = () => {
       <div className="flex space-x-12">
 
         <Links link_url={"/"} Link_text={"Home"} />
-        <Links link_url={"../components/about"} Link_text={"About"} />
-        <Links link_url={"../components/movie"} Link_text={"Movie"} />
-        <Links link_url={"../components/contact"} Link_text={"Contact"} />
+        <Links link_url={"../about"} Link_text={"About"} />
+        <Links link_url={"../movie"} Link_text={"Movie"} />
+        <Links link_url={"../contact"} Link_text={"Contact"} />
       
 
       </div>
