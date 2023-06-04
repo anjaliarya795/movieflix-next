@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import Wave from './wave/Wave';
-import Button from './browse _button/Button';
+import Button from './browse_button/Button';
 
 
-const Herosection = ({title,imgurl}) => {
+const Herosection = ({title,imgurl,height,width}) => {
     return (
         <>
         <section className='relative w-screen bg-gradient-to-r from-pink-300 to-sky-200 lg:p-28 md:px-0 px-5 py-28'>
@@ -29,7 +29,7 @@ const Herosection = ({title,imgurl}) => {
                     </div>
 
                     <div className='md:basis-1/2 basis-2/3 md:block hidden '>
-                        <Image src={imgurl} width={500} height={500} alt="image" className='mx-auto'/>
+                        <Image src={imgurl} width={height} height={width} alt="image" className='mx-auto'/>
                     </div>
 
                 </div>

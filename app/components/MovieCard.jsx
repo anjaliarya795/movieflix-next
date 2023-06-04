@@ -6,7 +6,7 @@ const MovieCard = (curElem) => {
 
     const {id, type, title, synopsis} = curElem.jawSummary;
 
-    console.log({id, type, title, synopsis},"in compppppppppppp")
+    // console.log({id, type, title, synopsis},"in compppppppppppp")
 
     
     return (
@@ -16,13 +16,13 @@ const MovieCard = (curElem) => {
                     <img src={curElem.jawSummary.backgroundImage.url} alt={title} className='rounded-t-xl h-36 ' />
                 </div>
                 <div className="p-2">
-                    <h2 className='text-xl font-medium my-2 truncate'>{title}</h2>
+                    <h2 className='text-xl font-medium my-2 '>{`${title.substring(0,18)}...`}</h2>
                     <p className='text-sm text-gray-500 leading-6 tracking-wider text-justify line-clamp-3 mb-3'>
                         {synopsis}
                     </p>
 
                     <Link href={`/movie/${id}`}>
-                        <button className='border-white rounded-full bg-black text-white px-4 py-2 text-xs'>
+                        <button  className='border-white rounded-full bg-black text-white px-4 py-2 text-xs'>
                             Read more
                         </button>
                     </Link>

@@ -1,10 +1,9 @@
 import Link from 'next/link';
 import Links from './Links';
-import About from '../../about/page';
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between p-4 bg-white text-black shadow-black container mx-auto py-5">
+    <nav className="flex items-center justify-between p-4 bg-white text-black shadow-black/5 dark:shadow-black/30 container mx-auto py-5">
         <Link href="/" className="flex items-center">
           <h1 className="text-3xl font-sans font-medium text-red-900">Movieflix</h1>
         </Link>
@@ -15,7 +14,6 @@ const Navbar = () => {
         <Links link_url={"../movie"} Link_text={"Movie"} />
         <Links link_url={"../contact"} Link_text={"Contact"} />
       
-
       </div>
     </nav>
   );

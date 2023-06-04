@@ -1,3 +1,4 @@
+import Loading from './loading'
 import Navbar from './components/Navbar/Navbar'
 import './globals.css'
 import { Inter } from 'next/font/google'
