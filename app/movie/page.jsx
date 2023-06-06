@@ -27,7 +27,7 @@ const Movie = async() => {
     
     return (
 
-            <section className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-12 container mx-auto px-56">
+            <section className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-12 container mx-auto px-56 mt-20">
                 {
                     main_data.map((curElem) => (
                         <MovieCard key={curElem.id} {...curElem} />
