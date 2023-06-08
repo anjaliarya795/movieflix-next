@@ -24,3 +24,5 @@ export const connectToDb = async () => {
             console.log(err)
         }
     }
+
+    export default connectToDb;
